@@ -5,10 +5,12 @@ import About from "./pages/About";
 import ForOwners from "./pages/ForOwners";
 import ForStaff from "./pages/ForStaff";
 import ForStudents from "./pages/ForStudents";
+import Help from "./pages/Help";
 import HomePage from "./pages/HomePage";
 import HousesPage from "./pages/HousesPage";
 import LoginOwner from "./pages/LoginOwner";
 import SignupLandlord from "./pages/SignupLandlord";
+import TermsAndConditions from "./pages/TermsAndConditions";
 import Universities from "./pages/Universities";
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
       <Route path="/for-owners" component={ForOwners} />
       <Route path="/for-staff" component={ForStaff} />
       <Route path="/universities" component={Universities} />
+      <Route path="/help" component={Help} />
+      <Route path="/terms-conditions" component={TermsAndConditions} />
       <Footer />
     </Router>
   );

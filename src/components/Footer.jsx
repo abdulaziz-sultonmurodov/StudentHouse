@@ -58,7 +58,7 @@ const Footer = () => {
             </Link>
           </li>
           <li className="my-2">
-            <Link className="text-gray-600 hover:text-gray-900 transition" to="/">
+            <Link className="text-gray-600 hover:text-gray-900 transition" to="/terms-conditions">
               Umumiy shartlar va qoidalar
             </Link>
           </li>

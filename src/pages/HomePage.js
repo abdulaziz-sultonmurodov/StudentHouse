@@ -1,6 +1,9 @@
 import React from "react";
 // import Home from "../images/Home.png";
 import StudentsInfo from "../images/studentsInfo.png";
+import OwnersInfo from "../images/ownersInfo.png";
+import StaffInfo from "../images/staffInfo.png";
+import Unis from "../images/universities.png";
 
 const HomePage = () => {
   return (
@@ -16,10 +19,10 @@ const HomePage = () => {
                 beradi va uy egalariga ham foyda olib keladi.
               </p>
               <div>
-                <button className="focus:outline-none border-2 mr-4 py-2 px-4">
+                <button className="focus:outline-none border-2 hover:border-secondary transition hover:text-secondary mr-4 py-2 px-4">
                   Ijaraga Uy Olish
                 </button>
-                <button className="focus:outline-none border-2 mx-4 py-2 px-4">
+                <button className="focus:outline-none border-2 hover:border-secondary transition hover:text-secondary mx-4 py-2 px-4">
                   E’lon Berish
                 </button>
               </div>
@@ -115,8 +118,33 @@ const HomePage = () => {
           </section>
         </section>
       </main>
+      <section className="flex flex-col justify-center items-center mt-14 mb-24 px-24">
+        <h1 className="text-3xl font-bold text-primary mb-5">
+          STUDENT HOUSE haqida
+        </h1>
+        <p className="leading-8">
+          <span className="text-primary font-bold">STUDENT HOUSE</span> - bu
+          talabalarning turar joy muammosini hal qilish va ularga yengillik
+          yaratish uchun ishlab chiqilgan O’zbekistondagi yagona chet el
+          tajribalariga asoslangan onlayn platforma. Bu platforma nafaqat
+          mahalliy balki xalqaro talabalarga ham birdek xizmat ko’rsatish uchun
+          mo’ljallangan. Siz bu yerda o’z uyingizni ijaraga qo’ya olasiz va
+          talabalar hech qanday qiyinchiliksiz yashash uchun uy topa oladilar.
+          Shu bilan birga OTM ma’sul xodimlari o’z talabalarini ushbu platforma
+          orqali nazorat qila oladilar.
+        </p>
+      </section>
       <section className="flex flex-col justify-center items-center mt-14 mb-24">
         <img src={StudentsInfo} alt="Steps for students" />
+      </section>
+      <section className="flex flex-col justify-center items-center mt-14 mb-24">
+        <img src={OwnersInfo} alt="Steps for owners" />
+      </section>
+      <section className="flex flex-col justify-center items-center mt-14 mb-24 px-24">
+        <img src={Unis} alt="Universities" />
+      </section>
+      <section className="flex flex-col justify-center items-center mt-14 mb-24">
+        <img src={StaffInfo} alt="Steps for staff" />
       </section>
     </>
   );
