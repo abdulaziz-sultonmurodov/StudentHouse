@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import ForOwners from "./pages/ForOwners";
+import ForStaff from "./pages/ForStaff";
+import ForStudents from "./pages/ForStudents";
+import HomePage from "./pages/HomePage";
+import HousesPage from "./pages/HousesPage";
+import LoginOwner from "./pages/LoginOwner";
+import SignupLandlord from "./pages/SignupLandlord";
+import Universities from "./pages/Universities";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Route path="/" component={HomePage} exact />
+      <Route path="/houses" component={HousesPage} />
+      <Route path="/about" component={About} />
+      <Route path="/signup-owner" component={SignupLandlord} />
+      <Route path="/login-owner" component={LoginOwner} />
+      <Route path="/for-students" component={ForStudents} />
+      <Route path="/for-owners" component={ForOwners} />
+      <Route path="/for-staff" component={ForStaff} />
+      <Route path="/universities" component={Universities} />
+      <Footer />
+    </Router>
   );
 }
 
