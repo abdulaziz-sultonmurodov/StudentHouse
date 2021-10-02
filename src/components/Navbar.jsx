@@ -11,7 +11,7 @@ const Navbar = () => {
                     <li className="mx-4 text-sm"><Link className="text-gray-600 hover:text-gray-900 transition" to="/">BOSH SAHIFA</Link></li>
                     <li className="mx-4 text-sm"><Link className="text-gray-600 hover:text-gray-900 transition" to="/about">BIZ HAQIMIZDA</Link></li>
                     <li className="mx-4 text-sm"><Link className="text-gray-600 hover:text-gray-900 transition" to="/houses">UYLAR</Link></li>
-                    <li className="mx-4 text-sm"><Link className="text-gray-600 hover:text-gray-900 transition" to="/">E’LON BERISH</Link></li>
+                    <li className="mx-4 text-sm"><Link className="text-gray-600 hover:text-gray-900 transition" to="/post">E’LON BERISH</Link></li>
                 </ul>
                 {/* <Link tp="/">
                 <img src={Logo} alt="StudentHouse Logo" />

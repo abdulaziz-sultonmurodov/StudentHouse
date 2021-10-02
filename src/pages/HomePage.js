@@ -4,6 +4,9 @@ import StudentsInfo from "../images/studentsInfo.png";
 import OwnersInfo from "../images/ownersInfo.png";
 import StaffInfo from "../images/staffInfo.png";
 import Unis from "../images/universities.png";
+import Houses1 from "../images/houses1.png";
+import Houses2 from "../images/houses2.png";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -138,10 +141,22 @@ const HomePage = () => {
         <img src={StudentsInfo} alt="Steps for students" />
       </section>
       <section className="flex flex-col justify-center items-center mt-14 mb-24">
+        <Link to="/house">
+          {" "}
+          <img src={Houses1} alt="Houses" />
+        </Link>
+      </section>
+      <section className="flex flex-col justify-center items-center mt-14 mb-24">
         <img src={OwnersInfo} alt="Steps for owners" />
       </section>
       <section className="flex flex-col justify-center items-center mt-14 mb-24 px-24">
         <img src={Unis} alt="Universities" />
+      </section>
+      <section className="flex flex-col justify-center items-center mt-14 mb-24">
+        <Link to="/house">
+          {" "}
+          <img src={Houses2} alt="Houses" />
+        </Link>
       </section>
       <section className="flex flex-col justify-center items-center mt-14 mb-24">
         <img src={StaffInfo} alt="Steps for staff" />

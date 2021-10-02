@@ -9,4 +9,5 @@ html {
 
 .home-img {
   background: url(./images/Home.png);
+  background-repeat: no-repeat;
 }
